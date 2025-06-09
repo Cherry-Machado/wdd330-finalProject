@@ -23,8 +23,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.2",
+    "express-session": "^1.18.1",
     "mongoose": "^8.15.1",
-    "session": "^0.1.0",
     "shortid": "^2.2.17",
     "slug": "^11.0.0"
   },

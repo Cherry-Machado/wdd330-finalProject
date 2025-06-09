@@ -4,10 +4,13 @@ const path = require('path');
 const express = require('express');
 const {engine} = require('express-handlebars');
 const router = require('./routes');
-const app = express();
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const MongoStore = require('connect-mongo');
 
 require('dotenv').config({path: 'variables.env'});
 
+const app = express();
 
 app.use('/', router());
 
@@ -18,5 +21,18 @@ app.set('views', './views');
 
 //static files
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(cookieParser());
+
+app.use(session({
+  secret: process.env.SECRET,
+  key: process.env.KEY,
+  resave: false,
+  saveUninitialized: false,
+  store: new MongoStore({
+    mongoUrl: process.env.DATABASE_URL,
+    collectionName: 'sessions'
+  }), 
+}));    
 
 app.listen(process.env.PORT);
