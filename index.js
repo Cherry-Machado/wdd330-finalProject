@@ -1,8 +1,12 @@
+const mongoose = require('mongoose');
+require('./config/db');
 const path = require('path');
 const express = require('express');
 const {engine} = require('express-handlebars');
 const router = require('./routes');
 const app = express();
+
+require('dotenv').config({path: 'variables.env'});
 
 
 app.use('/', router());
@@ -15,4 +19,4 @@ app.set('views', './views');
 //static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(5000);
+app.listen(process.env.PORT);
