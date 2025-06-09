@@ -1,18 +1,23 @@
-const express = require('express');
-const exphbs = require('express-handlebars');
-const router = require('../../routes');
-const app = express();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>{{WDD330 | softdevJobs}}</title>
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <div class="nombre-sitio contenedor">
+        <h1>
+          <a href="/">softdevJobs</a>
+        </h1>
+    </div>
 
-app.use('/', router());
+    <div class="contenido-principal contenedor">
+        {{{body}}}
+    </div>
 
-// Set up Handlebars view engine
-app.engine('handlebars', 
-    exphbs({
-        defaultLayout: 'layout',
-        layoutsDir: __dirname + '/views/layouts/'
-    }));
-app.set('view engine', 'handlebars');
-
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
-});
+</body>
+</html>
