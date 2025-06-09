@@ -1,0 +1,27 @@
+{
+  "name": "softdevjobs",
+  "version": "1.0.0",
+  "description": "Portal softdevJobs",
+  "homepage": "https://github.com/Cherry-Machado/wdd330-finalProject#readme",
+  "bugs": {
+    "url": "https://github.com/Cherry-Machado/wdd330-finalProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cherry-Machado/wdd330-finalProject.git"
+  },
+  "license": "ISC",
+  "author": "Cherry Machado",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
