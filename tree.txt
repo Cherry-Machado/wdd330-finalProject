@@ -1,0 +1,334 @@
+Folder PATH listing
+Volume serial number is 142E-EB48
+C:.
+ÃÄÄÄcontrollers
+ÃÄÄÄnode_modules
+³   ÃÄÄÄ.bin
+³   ÃÄÄÄ@isaacs
+³   ³   ÀÄÄÄcliui
+³   ³       ÀÄÄÄbuild
+³   ³           ÀÄÄÄlib
+³   ÃÄÄÄaccepts
+³   ÃÄÄÄansi-regex
+³   ÃÄÄÄansi-styles
+³   ÃÄÄÄanymatch
+³   ÃÄÄÄbalanced-match
+³   ³   ÀÄÄÄ.github
+³   ÃÄÄÄbinary-extensions
+³   ÃÄÄÄbody-parser
+³   ³   ÀÄÄÄlib
+³   ³       ÀÄÄÄtypes
+³   ÃÄÄÄbrace-expansion
+³   ³   ÀÄÄÄ.github
+³   ÃÄÄÄbraces
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄbytes
+³   ÃÄÄÄcall-bind-apply-helpers
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄcall-bound
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄchokidar
+³   ³   ÃÄÄÄlib
+³   ³   ÀÄÄÄtypes
+³   ÃÄÄÄcolor-convert
+³   ÃÄÄÄcolor-name
+³   ÃÄÄÄconcat-map
+³   ³   ÃÄÄÄexample
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄcontent-disposition
+³   ÃÄÄÄcontent-type
+³   ÃÄÄÄcookie
+³   ÃÄÄÄcookie-signature
+³   ÃÄÄÄcross-spawn
+³   ³   ÀÄÄÄlib
+³   ³       ÀÄÄÄutil
+³   ÃÄÄÄdebug
+³   ³   ÀÄÄÄsrc
+³   ÃÄÄÄdepd
+³   ³   ÀÄÄÄlib
+³   ³       ÀÄÄÄbrowser
+³   ÃÄÄÄdunder-proto
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄeastasianwidth
+³   ÃÄÄÄee-first
+³   ÃÄÄÄemoji-regex
+³   ³   ÀÄÄÄes2015
+³   ÃÄÄÄencodeurl
+³   ÃÄÄÄes-define-property
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄes-errors
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄes-object-atoms
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄescape-html
+³   ÃÄÄÄetag
+³   ÃÄÄÄexpress
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄexpress-handlebars
+³   ³   ÃÄÄÄ.github
+³   ³   ³   ÀÄÄÄworkflows
+³   ³   ÃÄÄÄdist
+³   ³   ÃÄÄÄlib
+³   ³   ÃÄÄÄspec
+³   ³   ³   ÀÄÄÄfixtures
+³   ³   ³       ÃÄÄÄlayouts
+³   ³   ³       ÃÄÄÄother-views
+³   ³   ³       ³   ÃÄÄÄlayouts
+³   ³   ³       ³   ÀÄÄÄpartials
+³   ³   ³       ÃÄÄÄpartials
+³   ³   ³       ³   ÀÄÄÄsubdir
+³   ³   ³       ÀÄÄÄtemplates
+³   ³   ³           ÀÄÄÄsubdir
+³   ³   ÀÄÄÄtypes
+³   ÃÄÄÄfill-range
+³   ÃÄÄÄfinalhandler
+³   ÃÄÄÄforeground-child
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄforwarded
+³   ÃÄÄÄfresh
+³   ÃÄÄÄfunction-bind
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄget-intrinsic
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄget-proto
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄglob
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄglob-parent
+³   ÃÄÄÄgopd
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄgraceful-fs
+³   ÃÄÄÄhandlebars
+³   ³   ÃÄÄÄbin
+³   ³   ÃÄÄÄdist
+³   ³   ³   ÃÄÄÄamd
+³   ³   ³   ³   ÀÄÄÄhandlebars
+³   ³   ³   ³       ÃÄÄÄcompiler
+³   ³   ³   ³       ÃÄÄÄdecorators
+³   ³   ³   ³       ÃÄÄÄhelpers
+³   ³   ³   ³       ÀÄÄÄinternal
+³   ³   ³   ÀÄÄÄcjs
+³   ³   ³       ÀÄÄÄhandlebars
+³   ³   ³           ÃÄÄÄcompiler
+³   ³   ³           ÃÄÄÄdecorators
+³   ³   ³           ÃÄÄÄhelpers
+³   ³   ³           ÀÄÄÄinternal
+³   ³   ÃÄÄÄlib
+³   ³   ³   ÀÄÄÄhandlebars
+³   ³   ³       ÃÄÄÄcompiler
+³   ³   ³       ÃÄÄÄdecorators
+³   ³   ³       ÃÄÄÄhelpers
+³   ³   ³       ÀÄÄÄinternal
+³   ³   ÀÄÄÄtypes
+³   ÃÄÄÄhas-flag
+³   ÃÄÄÄhas-symbols
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ³       ÀÄÄÄshams
+³   ÃÄÄÄhasown
+³   ³   ÀÄÄÄ.github
+³   ÃÄÄÄhttp-errors
+³   ³   ÀÄÄÄnode_modules
+³   ³       ÀÄÄÄstatuses
+³   ÃÄÄÄiconv-lite
+³   ³   ÃÄÄÄ.github
+³   ³   ÃÄÄÄ.idea
+³   ³   ³   ÃÄÄÄcodeStyles
+³   ³   ³   ÀÄÄÄinspectionProfiles
+³   ³   ÃÄÄÄencodings
+³   ³   ³   ÀÄÄÄtables
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄignore-by-default
+³   ÃÄÄÄinherits
+³   ÃÄÄÄipaddr.js
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄis-binary-path
+³   ÃÄÄÄis-extglob
+³   ÃÄÄÄis-fullwidth-code-point
+³   ÃÄÄÄis-glob
+³   ÃÄÄÄis-number
+³   ÃÄÄÄis-promise
+³   ÃÄÄÄisexe
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄjackspeak
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄlru-cache
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄmath-intrinsics
+³   ³   ÃÄÄÄ.github
+³   ³   ÃÄÄÄconstants
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄmedia-typer
+³   ÃÄÄÄmerge-descriptors
+³   ÃÄÄÄmime-db
+³   ÃÄÄÄmime-types
+³   ÃÄÄÄminimatch
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄminimist
+³   ³   ÃÄÄÄ.github
+³   ³   ÃÄÄÄexample
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄminipass
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄms
+³   ÃÄÄÄnegotiator
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄneo-async
+³   ÃÄÄÄnodemon
+³   ³   ÃÄÄÄbin
+³   ³   ÃÄÄÄdoc
+³   ³   ³   ÀÄÄÄcli
+³   ³   ÃÄÄÄlib
+³   ³   ³   ÃÄÄÄcli
+³   ³   ³   ÃÄÄÄconfig
+³   ³   ³   ÃÄÄÄhelp
+³   ³   ³   ÃÄÄÄmonitor
+³   ³   ³   ÃÄÄÄrules
+³   ³   ³   ÀÄÄÄutils
+³   ³   ÀÄÄÄnode_modules
+³   ³       ÃÄÄÄbrace-expansion
+³   ³       ÀÄÄÄminimatch
+³   ÃÄÄÄnormalize-path
+³   ÃÄÄÄobject-inspect
+³   ³   ÃÄÄÄ.github
+³   ³   ÃÄÄÄexample
+³   ³   ÀÄÄÄtest
+³   ³       ÀÄÄÄbrowser
+³   ÃÄÄÄon-finished
+³   ÃÄÄÄonce
+³   ÃÄÄÄpackage-json-from-dist
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄparseurl
+³   ÃÄÄÄpath-key
+³   ÃÄÄÄpath-scurry
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcommonjs
+³   ³       ÀÄÄÄesm
+³   ÃÄÄÄpath-to-regexp
+³   ³   ÀÄÄÄdist
+³   ÃÄÄÄpicomatch
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄproxy-addr
+³   ÃÄÄÄpstree.remy
+³   ³   ÃÄÄÄlib
+³   ³   ÀÄÄÄtests
+³   ³       ÀÄÄÄfixtures
+³   ÃÄÄÄqs
+³   ³   ÃÄÄÄ.github
+³   ³   ÃÄÄÄdist
+³   ³   ÃÄÄÄlib
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄrange-parser
+³   ÃÄÄÄraw-body
+³   ÃÄÄÄreaddirp
+³   ÃÄÄÄrouter
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄsafe-buffer
+³   ÃÄÄÄsafer-buffer
+³   ÃÄÄÄsemver
+³   ³   ÃÄÄÄbin
+³   ³   ÃÄÄÄclasses
+³   ³   ÃÄÄÄfunctions
+³   ³   ÃÄÄÄinternal
+³   ³   ÀÄÄÄranges
+³   ÃÄÄÄsend
+³   ÃÄÄÄserve-static
+³   ÃÄÄÄsetprototypeof
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄshebang-command
+³   ÃÄÄÄshebang-regex
+³   ÃÄÄÄside-channel
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄside-channel-list
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄside-channel-map
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄside-channel-weakmap
+³   ³   ÃÄÄÄ.github
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄsignal-exit
+³   ³   ÀÄÄÄdist
+³   ³       ÃÄÄÄcjs
+³   ³       ÀÄÄÄmjs
+³   ÃÄÄÄsimple-update-notifier
+³   ³   ÃÄÄÄbuild
+³   ³   ÀÄÄÄsrc
+³   ÃÄÄÄsource-map
+³   ³   ÃÄÄÄdist
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄstatuses
+³   ÃÄÄÄstring-width
+³   ÃÄÄÄstring-width-cjs
+³   ³   ÀÄÄÄnode_modules
+³   ³       ÃÄÄÄansi-regex
+³   ³       ÃÄÄÄemoji-regex
+³   ³       ³   ÀÄÄÄes2015
+³   ³       ÀÄÄÄstrip-ansi
+³   ÃÄÄÄstrip-ansi
+³   ÃÄÄÄstrip-ansi-cjs
+³   ³   ÀÄÄÄnode_modules
+³   ³       ÀÄÄÄansi-regex
+³   ÃÄÄÄsupports-color
+³   ÃÄÄÄto-regex-range
+³   ÃÄÄÄtoidentifier
+³   ÃÄÄÄtouch
+³   ³   ÀÄÄÄbin
+³   ÃÄÄÄtype-is
+³   ÃÄÄÄuglify-js
+³   ³   ÃÄÄÄbin
+³   ³   ÃÄÄÄlib
+³   ³   ÀÄÄÄtools
+³   ÃÄÄÄundefsafe
+³   ³   ÃÄÄÄ.github
+³   ³   ³   ÀÄÄÄworkflows
+³   ³   ÀÄÄÄlib
+³   ÃÄÄÄunpipe
+³   ÃÄÄÄvary
+³   ÃÄÄÄwhich
+³   ³   ÀÄÄÄbin
+³   ÃÄÄÄwordwrap
+³   ³   ÃÄÄÄexample
+³   ³   ÀÄÄÄtest
+³   ÃÄÄÄwrap-ansi
+³   ÃÄÄÄwrap-ansi-cjs
+³   ³   ÀÄÄÄnode_modules
+³   ³       ÃÄÄÄansi-regex
+³   ³       ÃÄÄÄansi-styles
+³   ³       ÃÄÄÄemoji-regex
+³   ³       ³   ÀÄÄÄes2015
+³   ³       ÃÄÄÄstring-width
+³   ³       ÀÄÄÄstrip-ansi
+³   ÀÄÄÄwrappy
+ÃÄÄÄpublic
+³   ÃÄÄÄcss
+³   ÀÄÄÄimg
+ÃÄÄÄroutes
+ÀÄÄÄviews
+    ÀÄÄÄlayouts
