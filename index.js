@@ -35,8 +35,8 @@ app.use(session({
   }), 
 }));    
 
+const host = '0.0.0.0';
 const port = process.env.PORT;
-const host = process.env.HOST || 'localhost';
 
 app.listen(port, host, () => {
   console.log('Server running Ok');

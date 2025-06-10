@@ -4,3 +4,7 @@ node_modules
 .env
 .DS_Store
 variables.env
+public/uploads/perfiles/*
+public/uploads/cv/*
+# Local Netlify folder
+.netlify
