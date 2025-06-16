@@ -62,4 +62,4 @@ vacantesSchema.pre('save', function(next) {
   next();
 });
 
-module.exports = mongoose.model('Vacante', vacantesSchema);
+module.exports = mongoose.model('vacante', vacantesSchema);
