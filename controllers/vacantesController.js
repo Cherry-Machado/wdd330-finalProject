@@ -14,4 +14,7 @@ exports.agregarVacante = (req, res) => {
     vacante.save()
         .then(() => res.redirect('/'))
         .catch(err => console.error(err));
+    
+    vacante.skills = req.body.skills.split(',');
+    console.log(vacante);
 }
