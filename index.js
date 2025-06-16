@@ -15,7 +15,9 @@ const app = express();
 app.use('/', router());
 
 // Set up Handlebars view engine
-app.engine('handlebars', engine());
+app.engine('handlebars', engine({
+  helpers: require('./helpers/handlebars')
+}));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
@@ -35,7 +37,7 @@ app.use(session({
   }), 
 }));    
 
-const host = '0.0.0.0';
+const host = process.env.HOST
 const port = process.env.PORT;
 
 app.listen(port, host, () => {
