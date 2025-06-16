@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Vacante = mongoose.model('vacante');
 
 exports.mostrarTrabajos = async (req, res, next) => {
-    
-    const vacantes = await Vacante.find();
+    try{
+    const vacantes = await Vacante.find().lean;
 
     if(!vacantes) {
         return next(); // If no vacancies found, proceed to the next middleware
@@ -14,6 +14,10 @@ exports.mostrarTrabajos = async (req, res, next) => {
        tagline: 'Find and post jobs for software developers',
        barra: true,
        boton: true,
-       vacantes,
+       vacantes: vacantes,
     });
+} catch (error) {
+    console.error('Error fetching vacancies:', error);
+    res.status(500).send('Internal Server Error');
+  }
 };
