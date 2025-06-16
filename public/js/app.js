@@ -23,5 +23,4 @@ const agregarSkills = (e) => {
     // Convert the Set to an Array and join with commas
     const skillsArray = [...skills];
     document.querySelector('#skills').value = skillsArray.join(',');  // Convert Set to Array and join with commas
-    console.log(skillsArray);
 }
