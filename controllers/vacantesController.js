@@ -8,13 +8,15 @@ exports.formularioNuevaVacante = (req, res) => {
     });
 }
 
-exports.agregarVacante = (req, res) => {
+exports.agregarVacante = async(req, res) => {
     const vacante = new Vacante(req.body);
     // Save the vacancy to the database
-    vacante.save()
-        .then(() => res.redirect('/'))
-        .catch(err => console.error(err));
-    
+   
+    // create array of skills from the string input
     vacante.skills = req.body.skills.split(',');
+
+    // save vacancy to the database and redirect to the new vacancy page
+    const nuevaVacante = await vacante.save();
+    res.redirect(`/vacancies/${nuevaVacante.url}`);
     console.log(vacante);
 }
