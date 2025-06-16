@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "nodemon ./index",
     "start": "concurrently \"npm run dev\" \"npm run watch\"",
-    "watch": "webpack --w --mode development"
+    "watch": "webpack --watch --mode development"
   },
   "dependencies": {
     "concurrently": "^9.1.2",
