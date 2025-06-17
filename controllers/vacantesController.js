@@ -44,3 +44,22 @@ exports.mostrarVacante = async (req, res, next) => {
         res.status(500).send('Internal Server Error');
     }
 };
+
+exports.formularioEditarVacante = async (req, res, next) => {
+    try {
+        const vacante = await Vacante.findOne({ url: req.params.url }).lean();
+        console.log(vacante);
+        alert(vacante);
+        if (!vacante) {
+            return next();
+        }
+
+        res.render('editar-vacante', {
+            vacante,
+            nombrePagina: `Editing: ${vacante.titulo}`
+        });
+    } catch (error) {
+        console.error('Error fetching vacancy for edit:', error);
+        res.status(500).send('Internal Server Error');
+    }
+};

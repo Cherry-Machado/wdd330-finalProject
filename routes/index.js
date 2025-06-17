@@ -14,6 +14,9 @@ module.exports = () =>{
     // Routes for read a single vacancy
     router.get('/vacancies/:url', vacantesController.mostrarVacante);
 
+    //Edit vacancy
+    router.get('/vacancies/edit/:url', vacantesController.formularioEditarVacante);
+    
 return router;
 
 };
