@@ -281,6 +281,7 @@ h3 {
 .vacante-descripcion * {
     color: white !important;
     line-height: 2.2;
+
 }
 
 .skills {
@@ -291,6 +292,7 @@ h3 {
 .vacante-descripcion div {
     font-size: 1.8rem;
     line-height: 2.4;
+
 }
 
 
@@ -370,7 +372,7 @@ trix-editor {
 
 trix-editor h1,
 trix-editor blockquote {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 trix-toolbar .trix-button-group {
@@ -383,6 +385,7 @@ trix-toolbar .trix-button--icon-strike {
 
 .campo.descripcion {
     display: block;
+    padding: 2rem 0;
 }
 
 .campo.descripcion label {
