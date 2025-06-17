@@ -20,11 +20,13 @@
         <div class="campo">
             <label for="contrato">Contract</label>
             <select id="contrato" name="contrato">
-                <option value="">-- Select --</option>
-                <option value="Freelance" {{#if (eq vacante.contrato "Freelance")}}selected{{/if}}>Freelance</option>
-                <option value="Full Time" {{#if (eq vacante.contrato "Full Time")}}selected{{/if}}>Full Time</option>
-                <option value="Half Time" {{#if (eq vacante.contrato "Half Time")}}selected{{/if}}>Half Time</option>
-                <option value="By Project" {{#if (eq vacante.contrato "By Project")}}selected{{/if}}>By Project</option>
+                {{#tipoContrato vacante.contrato}}
+                    <option value="">-- Select --</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Full Time">Full Time</option>
+                    <option value="Half Time">Half Time</option>
+                    <option value="By Project">By Project</option>
+                {{/tipoContrato}}
             </select>   
         </div>
        <h3>Job Description</h3>
@@ -43,7 +45,7 @@
 
         <div class="campo centrar-horizontal">
             <input type="hidden" name="skills" id="skills">
-            <input type="submit" class="btn btn-azul" value="Post Vacancy">
+            <input type="submit" class="btn btn-azul" value="Save Changes">
         </div>
     </form>
 </main>

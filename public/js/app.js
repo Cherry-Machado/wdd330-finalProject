@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
     if (skills) {
         skills.addEventListener('click', agregarSkills);
+
+        // Initialize the skills set from the input field
+        skillsSeleccionados();
     }
 });
 
@@ -23,4 +26,17 @@ const agregarSkills = (e) => {
     // Convert the Set to an Array and join with commas
     const skillsArray = [...skills];
     document.querySelector('#skills').value = skillsArray.join(',');  // Convert Set to Array and join with commas
+}
+
+const skillsSeleccionados = () => {
+   const seleccionadas = Array.from(document.querySelectorAll('.lista-conocimientos .activo'));
+ 
+   seleccionadas.forEach(seleccionada => {
+        skills.add(seleccionada.textContent);
+    })
+
+    
+    // Inyect the selected skills into the Set Hidden Input
+   const skillsArray = [...skills];
+   document.querySelector('#skills').value = skillsArray.join(',');
 }

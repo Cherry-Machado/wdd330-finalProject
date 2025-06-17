@@ -8,3 +8,4 @@ mongoose.connect(process.env.DATABASE_URL)
   
 // Import the Vacante model to ensure it's registered
 require('../models/vacantes'); // Import the Vacante model to ensure it's registered
+require('../models/usuarios'); // Import the Usuarios model to ensure it's registered

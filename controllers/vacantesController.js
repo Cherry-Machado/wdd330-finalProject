@@ -48,8 +48,8 @@ exports.mostrarVacante = async (req, res, next) => {
 exports.formularioEditarVacante = async (req, res, next) => {
     try {
         const vacante = await Vacante.findOne({ url: req.params.url }).lean();
-        console.log(vacante);
-        alert(vacante);
+        //console.log(vacante);
+        //alert(vacante);
         if (!vacante) {
             return next();
         }
@@ -60,6 +60,24 @@ exports.formularioEditarVacante = async (req, res, next) => {
         });
     } catch (error) {
         console.error('Error fetching vacancy for edit:', error);
+        res.status(500).send('Internal Server Error');
+    }
+};
+
+exports.editarVacante = async (req, res) => {
+    const vacanteActualizada = req.body;
+
+    // Array of skills
+    vacanteActualizada.skills = req.body.skills.split(',');
+
+    try {
+        const vacante = await Vacante.findOneAndUpdate({ url: req.params.url }, vacanteActualizada, {
+            new: true,
+            runValidators: true
+        });
+        res.redirect(`/vacancies/${req.params.url}`);
+    } catch (error) {
+        console.error('Error updating vacancy:', error);
         res.status(500).send('Internal Server Error');
     }
 };
