@@ -7,8 +7,13 @@ const vacantesController = require('../controllers/vacantesController');
 module.exports = () =>{
     router.get('/', homeController.mostrarTrabajos);
 
+    // Routes for create vacancies
     router.get('/vacancies/new', vacantesController.formularioNuevaVacante);
     router.post('/vacancies/new', vacantesController.agregarVacante);
 
+    // Routes for read a single vacancy
+    router.get('/vacancies/:url', vacantesController.mostrarVacante);
+
 return router;
+
 };

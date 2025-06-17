@@ -8,15 +8,39 @@ exports.formularioNuevaVacante = (req, res) => {
     });
 }
 
-exports.agregarVacante = async(req, res) => {
-    const vacante = new Vacante(req.body);
-    // Save the vacancy to the database
-   
-    // create array of skills from the string input
-    vacante.skills = req.body.skills.split(',');
 
-    // save vacancy to the database and redirect to the new vacancy page
-    const nuevaVacante = await vacante.save();
+// Add vacancies to the database
+exports.agregarVacante = async (req, res) => {
+    const vacante = new Vacante(req.body);
+
+    // Array of skills
+    vacante.skills = req.body.skills.split(',');
+  
+    // Save to the database
+    const nuevaVacante = await vacante.save()
+
+    // Redirect
     res.redirect(`/vacancies/${nuevaVacante.url}`);
-    console.log(vacante);
+
 }
+
+
+// Read a single vacancy
+exports.mostrarVacante = async (req, res, next) => {
+    try {
+        const vacante = await Vacante.findOne({ url: req.params.url }).lean();
+        
+        if (!vacante) {
+            return next();
+        }
+
+        res.render('vacante', {
+            vacante,
+            nombrePagina: vacante.titulo,
+            barra: true
+        });
+    } catch (error) {
+        console.error('Error fetching vacancy:', error);
+        res.status(500).send('Internal Server Error');
+    }
+};
