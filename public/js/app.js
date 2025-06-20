@@ -1,42 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const skills = document.querySelector('.lista-conocimientos');
-  
-    if (skills) {
-        skills.addEventListener('click', agregarSkills);
+  const skillsList = document.querySelector('.lista-conocimientos');
+  let alertasContainer = document.querySelector('.alertas'); // Obtiene el contenedor principal de alertas
 
-        // Initialize the skills set from the input field
+    if (alertasContainer) { // Solo llama a limpiarAlertas si el contenedor existe
+         limpiarAlertas(alertasContainer);
+    }
+
+    if (skillsList) {
+        skillsList.addEventListener('click', agregarSkills);
         skillsSeleccionados();
     }
 });
 
-const skills = new Set();
-// Function to add skills to the input field    
-const agregarSkills = (e) => {
-    if (e.target.tagName === 'LI') {
-       if (e.target.classList.contains('activo')) {
-           skills.delete(e.target.textContent);
-           e.target.classList.remove('activo');
-           
-       } else {
-           skills.add(e.target.textContent);
-           e.target.classList.add('activo');
-           
-       }
+
+const limpiarAlertas = (contenedorAlertas) => {
+    if (!contenedorAlertas) {
+        return;
     }
-    // Convert the Set to an Array and join with commas
-    const skillsArray = [...skills];
-    document.querySelector('#skills').value = skillsArray.join(',');  // Convert Set to Array and join with commas
-}
 
-const skillsSeleccionados = () => {
-   const seleccionadas = Array.from(document.querySelectorAll('.lista-conocimientos .activo'));
- 
-   seleccionadas.forEach(seleccionada => {
-        skills.add(seleccionada.textContent);
-    })
+    // `querySelectorAll` devuelve un NodeList estático. Si los elementos son removidos,
+    // el NodeList original no se actualiza, por eso se usa un contador.
+    const alertasIndividuales = contenedorAlertas.querySelectorAll('.alerta');
+    const totalAlertas = alertasIndividuales.length;
+    let alertasRemovidas = 0;
 
-    
-    // Inyect the selected skills into the Set Hidden Input
-   const skillsArray = [...skills];
-   document.querySelector('#skills').value = skillsArray.join(',');
+    // Si no hay alertas individuales dentro del contenedor, no iniciamos el intervalo
+    if (totalAlertas === 0) {
+        return;
+    }
+
+    const interval = setInterval(() => {
+        if (alertasRemovidas < totalAlertas) {
+            const alertaARemover = alertasIndividuales[alertasRemovidas];
+            // Asegúrate de que el elemento a remover aún es hijo del contenedor antes de intentar removerlo
+            if (alertaARemover && contenedorAlertas.contains(alertaARemover)) {
+                contenedorAlertas.removeChild(alertaARemover);
+            }
+            alertasRemovidas++;
+        } else {
+            if (contenedorAlertas.parentNode) {
+                contenedorAlertas.parentNode.removeChild(contenedorAlertas);
+            }
+            clearInterval(interval); 
+        }
+    }, 3000); // 3 segundos es un buen tiempo para ver las alertas.
 }

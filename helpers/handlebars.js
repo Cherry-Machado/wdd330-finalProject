@@ -14,10 +14,25 @@ module.exports = {
            });
 
             return opciones.fn().html = html;
-        },
-         tipoContrato: (seleccionado, opciones) => {
-            return opciones.fn(this).replace(
-               new RegExp(`value="${seleccionado}"`), '$& selected="selected"')
-    }
+      },
+      tipoContrato: (seleccionado, opciones) => {
+         return opciones.fn(this).replace(
+            new RegExp(`value="${seleccionado}"`), '$& selected="selected"')
+      },
+      mostrarAlertas: (mensajes, opciones) => {
+        const categorias = Object.keys(mensajes);
+        let html = '';
 
-}
+        categorias.forEach(categoria => {
+            if (Array.isArray(mensajes[categoria])) {
+                mensajes[categoria].forEach(mensaje => {
+                    html += `<div class="alerta ${categoria}">${mensaje}</div>`;
+                });
+            } else if (mensajes[categoria]) { // Si es un string directamente (un solo mensaje)
+                html += `<div class="alerta ${categoria}">${mensajes[categoria]}</div>`;
+            }
+        });
+
+        return opciones.fn(html); // Devuelve el HTML para que Handlebars lo inserte
+      }
+};

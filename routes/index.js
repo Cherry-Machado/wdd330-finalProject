@@ -3,7 +3,7 @@ const router = express.Router();
 const homeController = require('../controllers/homeController');
 const vacantesController = require('../controllers/vacantesController');
 const usuarioController= require('../controllers/usuarioController');
-
+const validationMiddleware = require('../middleware/validation');
 
 module.exports = () =>{
     router.get('/', homeController.mostrarTrabajos);
@@ -21,7 +21,10 @@ module.exports = () =>{
 
     // create account
     router.get('/create-account', usuarioController.formularioCrearCuenta);
-    router.post('/create-account', usuarioController.crearUsuario);
+    router.post('/create-account', 
+        validationMiddleware.validarRegistro,
+        usuarioController.crearUsuario
+    );
 
     return router;
 
