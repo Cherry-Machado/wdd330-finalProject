@@ -38,7 +38,7 @@ app.use(flash());
 
 // Middleware to set flash messages and user data in response locals
 app.use((req, res, next) => {
-  res.locals.mensajes = req.flash();
+  res.locals.mensajes = req.flash('mensajes');
   res.locals.usuario = { ...req.session.usuario } || null;
   console.log('Contenido de res.locals.mensajes (en el middleware de res.locals):', res.locals.mensajes);
   next();

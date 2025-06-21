@@ -1,4 +1,3 @@
-// middleware/validation.js
 const { body, validationResult } = require('express-validator');
 
 exports.validarRegistro = async (req, res, next) => {
