@@ -534,10 +534,12 @@ p.candidatos {
 /** Flash Messages **/
 .alertas {
     text-align: center;
+    transition: opacity 1s ease;
+   /*  text-align: center;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 65px;
+    top: 65px; */
 }
 
 .alerta {
@@ -545,9 +547,13 @@ p.candidatos {
     color: white;
     font-size: 2.2rem;
     text-align: center;
+    position: fixed; /* nuevo*/
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px; /* hasta aqui */
     text-transform: uppercase;
     font-weight: 700;
-    margin-top: .3rem;
+    /*margin-top: .3rem;*/  /*Este no estaba en video*/ 
 }
 
 .correcto {

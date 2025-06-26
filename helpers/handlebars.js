@@ -19,20 +19,19 @@ module.exports = {
          return opciones.fn(this).replace(
             new RegExp(`value="${seleccionado}"`), '$& selected="selected"')
       },
-      mostrarAlertas: (mensajes, opciones) => {
-        const categorias = Object.keys(mensajes);
-        let html = '';
+      mostrarAlertas: (errores = {}, alertas ) => {
+       const categoria = Object.keys(errores);
+      
+       let html = '';
+       if (categoria.length) {
+          errores[categoria].forEach(error => {
+            html += `<div class="${categoria} alerta">
+              ${error}
+              </div>`;
+          })
+       }
 
-        categorias.forEach(categoria => {
-            if (Array.isArray(mensajes[categoria])) {
-                mensajes[categoria].forEach(mensaje => {
-                    html += `<div class="alerta ${categoria}">${mensaje}</div>`;
-                });
-            } else if (mensajes[categoria]) { // Si es un string directamente (un solo mensaje)
-                html += `<div class="alerta ${categoria}">${mensajes[categoria]}</div>`;
-            }
-        });
+       return alertas.fn().html = html;
 
-        return opciones.fn(html); // Devuelve el HTML para que Handlebars lo inserte
       }
 };

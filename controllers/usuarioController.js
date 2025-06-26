@@ -1,4 +1,3 @@
-// controllers/usuarioController.js
 const mongoose = require('mongoose');
 const Usuarios = mongoose.model('Usuarios');
 
@@ -19,12 +18,13 @@ exports.crearUsuario = async (req, res, next) => {
         await nuevoUsuario.save();
 
         req.flash('correcto', 'Account created successfully, now you can log in');
+        console.log('Contenido de res.locals.mensajes (en usuarioController.js)', res.locals.mensajes);
 
         return res.redirect('/login');
     } catch (error) {
        
         req.flash('error', [errorMessage]);
-        //console.log('Contenido de res.locals.mensajes (en usuarioController.js)', rres.locals.mensajes);
+        console.log('Contenido de res.locals.mensajes (en usuarioController.js)', res.locals.mensajes);
 
 
         return res.redirect('/create-account');
